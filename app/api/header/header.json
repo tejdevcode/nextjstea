@@ -1,0 +1,18 @@
+{
+   "mainmenu":[
+      {"linkName": "home"},
+      {"linkName": "about"},
+      {"linkName": "products"},
+      {"linkName": "store"},
+      {"linkName": "pages"},
+      {"linkName": "contact"}
+   ],
+   "mainsubmenu":{
+      "pages":[
+         "features",
+         "blog article",
+         "testimonial",
+         "404 page"
+      ]
+   }
+}

@@ -1,9 +1,19 @@
+
 import Image from 'next/image'
 import styles from './page.module.css'
+//import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Homeslider from './components/home/Carousel';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
+      <Header />
+      <Homeslider />
+      <Footer />
+      <h1> update 5</h1>
+
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
