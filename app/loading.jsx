@@ -1,6 +1,6 @@
 const LoadingPage = () => {
   return (
-    <span class="loader"></span>
+    <span className="loader"></span>
   );
 };
 export default LoadingPage;

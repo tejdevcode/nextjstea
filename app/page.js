@@ -5,12 +5,16 @@ import styles from './page.module.css'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Homeslider from './components/home/Carousel';
+import Check from './components/home/Corosualdata';
+import Abouthome from './components/home/Abouthome';
 
 export default function Home() {
   return (
     <main>
       <Header />
       <Homeslider />
+      <Check />
+      <Abouthome />
       <Footer />
       <h1> update 5</h1>
 

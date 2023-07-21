@@ -30,7 +30,7 @@ const Navmenu = ({data}) => {
 							)}
 						</NavDropdown>
 						{mainmenu.slice(5,6).map((item, i) =>
-							<Link href={`/`+ (item.linkName === 'home' ? "" : item.linkName) } className='nav-item nav-link'>{item.linkName}</Link>
+							<Link href={`/`+ (item.linkName === 'home' ? "" : item.linkName) } className='nav-item nav-link'  key={i}>{item.linkName}</Link>
 							)}
 					</Nav>
 				</Navbar.Collapse>
