@@ -7,14 +7,22 @@ import Footer from './components/footer/Footer';
 import Homeslider from './components/home/Carousel';
 import Topslider from './components/home/Corosualdata';
 import Abouthome from './components/home/Abouthome';
+import ProductsInfo from './components/home/ProductsInfo';
+import ProductsInfodata from './components/home/ProductsInfodata';
+import Articledata from './components/home/Articledata';
+import Articleinfo from './components/home/Article';
 
  export default async function Home() {
   const Topsliderdata = await Topslider();
+  const Productitems = await ProductsInfodata();
+  const Article = await Articledata();
   return (
     <main>
       <Header />
       <Homeslider data={Topsliderdata} />
       <Abouthome />
+      <ProductsInfo data={Productitems}/>
+      <Articleinfo data={Article} />
       <Footer />
       <h1> update 5</h1>
 

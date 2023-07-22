@@ -36,7 +36,7 @@ const Abouthome = async () => {
 					</div>
 					<div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
 						<div className="section-title">
-							<p className="fs-5 fw-medium fst-italic text-primary">{abouthome.abouthome_info.secname}</p>
+							<p className="fs-5  fst-italic text-primary">{abouthome.abouthome_info.secname}</p>
 							<h1 className="display-6">{abouthome.abouthome_info.sectitle}</h1>
 						</div>
 						{abouthome.abouthome_info.aboutitem.map((item, index) =>

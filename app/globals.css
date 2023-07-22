@@ -29,6 +29,10 @@
   font-weight: 900;
 }
 
+img{
+  max-width: 100%;
+}
+
 
 /*** Spinner ***/
 #spinner {
@@ -291,6 +295,7 @@
   box-shadow: 0 0 45px rgba(0, 0, 0, .15);
   font-size: 25px;
   transition: .5s;
+  border: none;
 }
 
 .product-carousel .owl-nav .owl-prev:hover,
