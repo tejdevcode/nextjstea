@@ -5,15 +5,15 @@ import styles from './page.module.css'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Homeslider from './components/home/Carousel';
-import Check from './components/home/Corosualdata';
+import Topslider from './components/home/Corosualdata';
 import Abouthome from './components/home/Abouthome';
 
-export default function Home() {
+ export default async function Home() {
+  const Topsliderdata = await Topslider();
   return (
     <main>
       <Header />
-      <Homeslider />
-      <Check />
+      <Homeslider data={Topsliderdata} />
       <Abouthome />
       <Footer />
       <h1> update 5</h1>

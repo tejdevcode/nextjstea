@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 async function abouthomedata() {
-	const res = await fetch("http://localhost:3001/api/home/about", { next: { revalidate: 10 } });
+	const res = await fetch(process.env.NEXT_APP_URL + "api/home/about", { next: { revalidate: 10 } });
 	if (!res.ok) {
 		throw new Error(`HTTP error! status: ${res.status}`)
 	}
@@ -23,7 +23,8 @@ const Abouthome = async () => {
 									{item.boximg.map((img, childindex) =>
 										<Image
 											className={"img-fluid bg-white mb-3 wow fadeIn " +
-												(index == 0 ? (childindex % 2 === 0 ? "w-100" : "w-50") :
+												(index == 0 ? 
+													(childindex % 2 === 0 ? "w-100" : "w-50") :
 													(childindex % 2 === 0 ? "w-50" : "w-100"))}
 											data-wow-delay={`0.${index + 1}s`}
 											src={img.mediaimg}
