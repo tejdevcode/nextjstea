@@ -17,6 +17,9 @@ import Onlinestore from './components/home/Onlinestore'
 import Onlinestoredata from './components/home/Onlinestoredata'
 import Testimonial from './components/home/Testimonial'
 import TestimonialData from './components/home/Testimonialdata'
+import Contact from './components/home/Contact'
+import ContactData from './components/home/Contactdata'
+
 
  export default async function Home() {
   const Topsliderdata = await Topslider();
@@ -25,6 +28,7 @@ import TestimonialData from './components/home/Testimonialdata'
   const Teamodalinfo = await Teamodeldata();
   const Onlinestoreinfo = await Onlinestoredata();
   const Testimonialdata = await TestimonialData();
+  const Contactinfo = await ContactData();
   return (
     <main>
       <Header />
@@ -35,6 +39,7 @@ import TestimonialData from './components/home/Testimonialdata'
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
       <Testimonial data={Testimonialdata} />
+      <Contact data={Contactinfo} />
       <Footer />
       <h1> update 5</h1>
 
