@@ -11,11 +11,20 @@ import ProductsInfo from './components/home/ProductsInfo';
 import ProductsInfodata from './components/home/ProductsInfodata';
 import Articledata from './components/home/Articledata';
 import Articleinfo from './components/home/Article';
+import Teamodel from './components/home/Teamodel'
+import Teamodeldata from './components/home/Teamodeldata'
+import Onlinestore from './components/home/Onlinestore'
+import Onlinestoredata from './components/home/Onlinestoredata'
+import Testimonial from './components/home/Testimonial'
+import TestimonialData from './components/home/Testimonialdata'
 
  export default async function Home() {
   const Topsliderdata = await Topslider();
   const Productitems = await ProductsInfodata();
   const Article = await Articledata();
+  const Teamodalinfo = await Teamodeldata();
+  const Onlinestoreinfo = await Onlinestoredata();
+  const Testimonialdata = await TestimonialData();
   return (
     <main>
       <Header />
@@ -23,6 +32,9 @@ import Articleinfo from './components/home/Article';
       <Abouthome />
       <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
+      <Teamodel data={Teamodalinfo} />
+      <Onlinestore data={Onlinestoreinfo} />
+      <Testimonial data={Testimonialdata} />
       <Footer />
       <h1> update 5</h1>
 

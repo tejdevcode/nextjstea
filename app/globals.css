@@ -1,6 +1,8 @@
 @import './bootstrap.min.css';
 @import './animate.min.css';
 
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap');*/
+
 /********** Template CSS **********/
 :root {
   --primary: #88B44E;
@@ -455,14 +457,16 @@ img{
   border-radius: 60px;
 }
 
-.testimonial-carousel .owl-dots {
+.testimonial-carousel .owl-dots,
+.testimonial-carousel .slick-dots{
   margin-top: 35px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-.testimonial-carousel .owl-dot {
+.testimonial-carousel .owl-dot ,
+.testimonial-carousel .slick-dots li {
   position: relative;
   display: inline-block;
   margin: 0 5px;
@@ -473,9 +477,18 @@ img{
   transition: .5s;
 }
 
-.testimonial-carousel .owl-dot.active {
+.testimonial-carousel .owl-dot.active,
+.testimonial-carousel .slick-dots li.slick-active {
   width: 30px;
   background: var(--dark);
+}
+
+.testimonial-carousel .slick-dots li button:before{
+  display: none;
+}
+
+.testimonial-carousel .slick-dots{
+  bottom: -55px;
 }
 
 

@@ -1,7 +1,7 @@
 
 "use client"
-import Image from 'next/Image'
-import Link from 'next/Link'
+import Image from 'next/image'
+import Link from 'next/link'
 import WOW from 'react-wow';
 
 const Article = ({data}) => {

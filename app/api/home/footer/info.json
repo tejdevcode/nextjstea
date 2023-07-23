@@ -1,0 +1,74 @@
+{
+   "footer": {
+      "one": {
+         "title": "Our Office",
+         "contact": [
+            {
+               "address": "123 Street, New York, USA",
+               "icon": "FaMapMarkerAlt"
+            },
+            {
+               "phone": "123-456-7890",
+               "icon": "FaPhone"
+            },
+            {
+               "email": "info@example.com",
+               "icon": "FaEnvelope"
+            }
+         ],
+         "social": [
+            {
+               "icon": "FaTwitter",
+               "link": "https://twitter.com"
+            },
+            {
+               "icon": "FaFacebook",
+               "link": "https://facebook.com"
+            },
+            {
+               "icon": "FaYoutube",
+               "link": "https://youtube.com"
+            },
+            {
+               "icon": "FaLinkedinIn",
+               "link": "https://linked.com"
+            }
+         ]
+      },
+      "two": {
+         "title": "Quick Links",
+         "links": [
+            "about us",
+            "contat us",
+            "Our service",
+            "Terms and conditions",
+            "support"
+         ]
+      },
+      "three": {
+         "title": "Business Hours",
+         "timing": [
+            {
+               "day": "Monday - Friday",
+               "time": "09:00 - 07:00"
+            },
+            {
+               "day": "Saturday",
+               "time": "09:00 - 12:00"
+            },
+            {
+               "day": "Sunday",
+               "time": "closed"
+            }
+         ]
+      },
+      "four": {
+         "title": "Newsletter",
+         "discription": "Dolor amet sit justo amet elitr clita ipsum elitr est."
+      },
+      "copy":{
+         "title":"©Tez, All Right Reserved.",
+         "design" : "Designed By"
+      }
+   }
+}
