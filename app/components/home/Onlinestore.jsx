@@ -17,14 +17,14 @@ const Onlinestore = ({data}) => {
             </WOW>
             <div className="row g-4">
           {storeinfo.storeproduct.map((item, i) =>
-            <WOW animation='fadeInUp' delay={`0.${i+1}s`}>
-              <div className="col-lg-4 col-md-6 " key={i}>
+            <WOW animation='fadeInUp' delay={`0.${i+1}s`} key={i}>
+              <div className="col-lg-4 col-md-6 " >
                 <div className="store-item position-relative text-center">
                   <Image className="img-fluid" src={item.image} alt="" width={408} height={272}/>
                     <div className="p-4">
                       <div className="text-center mb-3">
                         {item.star.map((star,i) =>
-                          <FaStar className=" text-primary"/>
+                          <FaStar className=" text-primary" key={i}/>
                         )}
                       </div>
                       <h4 className="mb-3">{item.name}</h4>

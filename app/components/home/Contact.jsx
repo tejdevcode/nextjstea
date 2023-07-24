@@ -1,4 +1,3 @@
-
 "use client"
 import Link from 'next/link'
 import WOW from 'react-wow';
@@ -21,8 +20,8 @@ const Article = ({ data }) => {
                      <p className="text-center mb-5">{contactinfo.secsubtitle}</p>
                      <div className="row g-5">
                         {contactinfo.channel.map((item, i) =>
-                           <WOW animation='fadeInUp' delay={`0.${i + 3}s`}>
-                              <div className="col-md-4 text-center " key={i}>
+                           <WOW animation='fadeInUp' delay={`0.${i + 3}s`}  key={i}>
+                              <div className="col-md-4 text-center ">
                                  <div className="btn-square mx-auto mb-3">
                                     {i == 0 ? <FaEnvelope className='contactico fa-2x text-white' /> : i == 1 ? <FaPhone className='contactico fa-2x text-white' /> :
                                        i == 2 ? <FaMapMarkerAlt className='contactico fa-2x text-white' /> : ""}

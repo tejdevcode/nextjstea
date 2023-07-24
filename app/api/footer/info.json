@@ -4,33 +4,35 @@
          "title": "Our Office",
          "contact": [
             {
-               "address": "123 Street, New York, USA",
-               "icon": "FaMapMarkerAlt"
+               "directory": "123 Street, New York, USA",
+               "icon": "<FaMapMarkerAlt />"
             },
             {
-               "phone": "123-456-7890",
-               "icon": "FaPhone"
+               "directory": "123-456-7890",
+               "link" : "tel:+123-456-7890",
+               "icon": "<FaPhone />"
             },
             {
-               "email": "info@example.com",
-               "icon": "FaEnvelope"
+               "directory": "info@example.com",
+               "link" : "mailto:info@example.com",
+               "icon": "<FaEnvelope />"
             }
          ],
          "social": [
             {
-               "icon": "FaTwitter",
+               "icon": "<FaTwitter />",
                "link": "https://twitter.com"
             },
             {
-               "icon": "FaFacebook",
+               "icon": "<FaFacebook />",
                "link": "https://facebook.com"
             },
             {
-               "icon": "FaYoutube",
+               "icon": "<FaYoutube />",
                "link": "https://youtube.com"
             },
             {
-               "icon": "FaLinkedinIn",
+               "icon": "<FaLinkedinIn />",
                "link": "https://linked.com"
             }
          ]

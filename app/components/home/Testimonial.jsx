@@ -30,7 +30,7 @@ const Testimonial = ({data}) => {
               <div className="owl-carousel testimonial-carousel">
               <Slider {...settings}>
                 {testimonial.clientwords.map((item, index) =>
-                  <div className="testimonial-item p-4 p-lg-5 d-block">
+                  <div className="testimonial-item p-4 p-lg-5 d-block" key={index}>
                       <p className="mb-4">{item.discription}</p>
                       <div className="d-flex align-items-center justify-content-center">
                           <Image className="img-fluid flex-shrink-0" src={item.image} alt="" width={60} height={60}/>

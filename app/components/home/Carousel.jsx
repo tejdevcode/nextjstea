@@ -1,10 +1,10 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import LoadingPage from '../../loading';
-import React, { useState, useEffect } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
+//import LoadingPage from '../../loading';
+//import React, { useState, useEffect } from 'react'
 
 
 

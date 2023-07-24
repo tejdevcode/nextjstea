@@ -1,6 +1,4 @@
-import Link from "next/link";
-import Navmenu from "./Nav";
-
+import Navmenu from "./Nav"
 
 async function navdata(){
   const res = await fetch(`http://localhost:3001/api/header`,{ next: { revalidate: 10 } });
@@ -15,7 +13,6 @@ const Header = async () => {
   
   return (
     <header className="container-fluid bg-white sticky-top">
-      {/* nav start */}
       <Navmenu data={navmenu} />
     </header>
   )
