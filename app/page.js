@@ -2,40 +2,40 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Homeslider from './components/home/Carousel';
 import Abouthome from './components/home/Abouthome';
-import ProductsInfo from './components/home/ProductsInfo';
-import Articleinfo from './components/home/Article';
-import Teamodel from './components/home/Teamodel'
-import Onlinestore from './components/home/Onlinestore'
-import Testimonial from './components/home/Testimonial'
-import Contact from './components/home/Contact'
-import FetchData from './components/Fetchdata'
+// import Footer from './components/footer/Footer';
+// import Homeslider from './components/home/Carousel';
+// import ProductsInfo from './components/home/ProductsInfo';
+// import Articleinfo from './components/home/Article';
+// import Teamodel from './components/home/Teamodel'
+// import Onlinestore from './components/home/Onlinestore'
+// import Testimonial from './components/home/Testimonial'
+// import Contact from './components/home/Contact'
+// import FetchData from './components/Fetchdata'
 
 
  export default async function Home() {
-  const Topsliderdata =      await FetchData('home/corosual');
-  const Productitems =       await FetchData('home/products');
-  const Article =            await FetchData('home/article');
-  const Teamodalinfo =       await FetchData('home/teamodel');
-  const Onlinestoreinfo =    await FetchData('home/store');
-  const Testimonialdata =    await FetchData('home/testimonial');
-  const Contactinfo =        await FetchData('home/contact');
-  const Footerinfo =         await FetchData('footer');
+  // const Topsliderdata =      await FetchData('home/corosual');
+  // const Productitems =       await FetchData('home/products');
+  // const Article =            await FetchData('home/article');
+  // const Teamodalinfo =       await FetchData('home/teamodel');
+  // const Onlinestoreinfo =    await FetchData('home/store');
+  // const Testimonialdata =    await FetchData('home/testimonial');
+  // const Contactinfo =        await FetchData('home/contact');
+  // const Footerinfo =         await FetchData('footer');
 
   return (
     <main>
       <Header />
-      <Homeslider data={Topsliderdata} />
+      {/* <Homeslider data={Topsliderdata} /> */}
       <Abouthome />
-      <ProductsInfo data={Productitems}/>
+      {/* <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
       <Testimonial data={Testimonialdata} />
       <Contact data={Contactinfo} />
-      <Footer data={Footerinfo}/>
+      <Footer data={Footerinfo}/> */}
 
 
 
