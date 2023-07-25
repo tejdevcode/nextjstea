@@ -2,7 +2,7 @@ import Image from "next/image"
 
 async function abouthomedata() {
 	//const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + "api/home/about", { next: { revalidate: 10 } });
-	const res = await fetch("http://localhost:3000/api/home/about", { next: { revalidate: 10 } });
+	const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + "api/home/about", { next: { revalidate: 10 } });
 	if (!res.ok) {
 		throw new Error(`HTTP error! status: ${res.status}`)
 	}
