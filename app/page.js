@@ -1,10 +1,10 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-// import Header from './components/header/Header';
+import Header from './components/header/Header';
 import Abouthome from './components/home/Abouthome';
 // import Footer from './components/footer/Footer';
-import Homeslider from './components/home/Carousel';
+//import Homeslider from './components/home/Carousel';
 // import ProductsInfo from './components/home/ProductsInfo';
 // import Articleinfo from './components/home/Article';
 // import Teamodel from './components/home/Teamodel'
