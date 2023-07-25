@@ -10,7 +10,7 @@ const Onlinestore = ({data}) => {
     <div className="container-xxl py-5">
         <div className="container">
         <WOW animation='fadeInUp' delay={`0.1s`}>
-            <div className="section-title text-center mx-auto" style={{maxWidth:"500px;"}}>
+            <div className="section-title text-center mx-auto" style={{maxWidth:"500px"}}>
                 <p className="fs-5  fst-italic text-primary">{storeinfo.secname}</p>
                 <h1 className="display-6">{storeinfo.sectitle}</h1>
             </div>
