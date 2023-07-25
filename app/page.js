@@ -4,14 +4,14 @@ import styles from './page.module.css'
 // import Header from './components/header/Header';
 import Abouthome from './components/home/Abouthome';
 // import Footer from './components/footer/Footer';
-// import Homeslider from './components/home/Carousel';
+import Homeslider from './components/home/Carousel';
 // import ProductsInfo from './components/home/ProductsInfo';
 // import Articleinfo from './components/home/Article';
 // import Teamodel from './components/home/Teamodel'
 // import Onlinestore from './components/home/Onlinestore'
 // import Testimonial from './components/home/Testimonial'
 // import Contact from './components/home/Contact'
-// import FetchData from './components/Fetchdata'
+import FetchData from './components/Fetchdata'
 
 
  export default async function Home() {
@@ -26,8 +26,8 @@ import Abouthome from './components/home/Abouthome';
 
   return (
     <main>
-      {/* <Header />
-      <Homeslider data={Topsliderdata} /> */}
+      <Header />
+      <Homeslider data={Topsliderdata} />
       <Abouthome />
       {/* <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
