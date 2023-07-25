@@ -1,8 +1,8 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import Header from './components/header/Header';
-import Abouthome from './components/home/Abouthome';
+// import Header from './components/header/Header';
+// import Abouthome from './components/home/Abouthome';
 // import Footer from './components/footer/Footer';
 // import Homeslider from './components/home/Carousel';
 // import ProductsInfo from './components/home/ProductsInfo';
@@ -26,10 +26,10 @@ import Abouthome from './components/home/Abouthome';
 
   return (
     <main>
-      <Header />
-      {/* <Homeslider data={Topsliderdata} /> */}
+      {/* <Header />
+      <Homeslider data={Topsliderdata} />
       <Abouthome />
-      {/* <ProductsInfo data={Productitems}/>
+      <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
