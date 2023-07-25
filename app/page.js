@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 // import Header from './components/header/Header';
-// import Abouthome from './components/home/Abouthome';
+import Abouthome from './components/home/Abouthome';
 // import Footer from './components/footer/Footer';
 // import Homeslider from './components/home/Carousel';
 // import ProductsInfo from './components/home/ProductsInfo';
@@ -27,9 +27,9 @@ import styles from './page.module.css'
   return (
     <main>
       {/* <Header />
-      <Homeslider data={Topsliderdata} />
+      <Homeslider data={Topsliderdata} /> */}
       <Abouthome />
-      <ProductsInfo data={Productitems}/>
+      {/* <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
