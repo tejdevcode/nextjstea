@@ -11,7 +11,7 @@ import Homeslider from './components/home/Carousel';
 // import Onlinestore from './components/home/Onlinestore'
 // import Testimonial from './components/home/Testimonial'
 // import Contact from './components/home/Contact'
-import FetchData from './components/Fetchdata'
+//import FetchData from './components/Fetchdata'
 
 
  export default async function Home() {
