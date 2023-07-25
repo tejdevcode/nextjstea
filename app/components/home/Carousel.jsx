@@ -14,7 +14,7 @@ const Heroslider = ({data}) => {
 	// //const [loading, setLoading] = useState(true);
 
    // useEffect(async () => {
-   //    const res = await fetch('http://localhost:3001/api/home/corosual');
+   //    const res = await fetch('http://localhost:3000/api/home/corosual');
    //    const slider = await res.json();
    //    setSlideinfo(slider.slideitem);
    //    //setLoading(false);
