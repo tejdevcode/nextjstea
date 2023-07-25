@@ -27,7 +27,7 @@ import Homeslider from './components/home/Carousel';
   return (
     <main>
       <Header />
-      <Homeslider data={Topsliderdata} />
+      {/* <Homeslider data={Topsliderdata} /> */}
       <Abouthome />
       {/* <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
