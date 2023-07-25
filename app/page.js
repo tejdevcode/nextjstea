@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Header from './components/header/Header';
 import Abouthome from './components/home/Abouthome';
-// import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 //import Homeslider from './components/home/Carousel';
 // import ProductsInfo from './components/home/ProductsInfo';
 // import Articleinfo from './components/home/Article';
@@ -11,7 +11,7 @@ import Abouthome from './components/home/Abouthome';
 // import Onlinestore from './components/home/Onlinestore'
 // import Testimonial from './components/home/Testimonial'
 // import Contact from './components/home/Contact'
-//import FetchData from './components/Fetchdata'
+import FetchData from './components/Fetchdata'
 
 
  export default async function Home() {
@@ -22,7 +22,7 @@ import Abouthome from './components/home/Abouthome';
   // const Onlinestoreinfo =    await FetchData('home/store');
   // const Testimonialdata =    await FetchData('home/testimonial');
   // const Contactinfo =        await FetchData('home/contact');
-  // const Footerinfo =         await FetchData('footer');
+  const Footerinfo =         await FetchData('footer');
 
   return (
     <main>
@@ -34,8 +34,8 @@ import Abouthome from './components/home/Abouthome';
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
       <Testimonial data={Testimonialdata} />
-      <Contact data={Contactinfo} />
-      <Footer data={Footerinfo}/> */}
+      <Contact data={Contactinfo} />*/}
+      <Footer data={Footerinfo}/> 
 
 
 
