@@ -572,6 +572,26 @@ img{
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
+
+.nextlogocenter{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.siteloader{
+  height: 100vh;
+  width: calc(100vw - 23px);
+  position: fixed;
+  top: 0;
+  margin: auto;
+  background: #fff;
+    z-index: 70;
+        display: grid;
+    place-items: center;
+}
 @keyframes rotation {
   0% {
     transform: rotate(0deg);

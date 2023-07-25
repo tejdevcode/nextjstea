@@ -4,43 +4,43 @@ import styles from './page.module.css'
 import Header from './components/header/Header';
 import Abouthome from './components/home/Abouthome';
 import Footer from './components/footer/Footer';
-//import Homeslider from './components/home/Carousel';
-// import ProductsInfo from './components/home/ProductsInfo';
-// import Articleinfo from './components/home/Article';
-// import Teamodel from './components/home/Teamodel'
-// import Onlinestore from './components/home/Onlinestore'
-// import Testimonial from './components/home/Testimonial'
-// import Contact from './components/home/Contact'
+import Homeslider from './components/home/Carousel';
+import ProductsInfo from './components/home/ProductsInfo';
+import Articleinfo from './components/home/Article';
+import Teamodel from './components/home/Teamodel'
+import Onlinestore from './components/home/Onlinestore'
+import Testimonial from './components/home/Testimonial'
+import Contact from './components/home/Contact'
 import FetchData from './components/Fetchdata'
 
 
  export default async function Home() {
-  // const Topsliderdata =      await FetchData('home/corosual');
-  // const Productitems =       await FetchData('home/products');
-  // const Article =            await FetchData('home/article');
-  // const Teamodalinfo =       await FetchData('home/teamodel');
-  // const Onlinestoreinfo =    await FetchData('home/store');
-  // const Testimonialdata =    await FetchData('home/testimonial');
-  // const Contactinfo =        await FetchData('home/contact');
+  const Topsliderdata =      await FetchData('home/corosual');
+  const Productitems =       await FetchData('home/products');
+  const Article =            await FetchData('home/article');
+  const Teamodalinfo =       await FetchData('home/teamodel');
+  const Onlinestoreinfo =    await FetchData('home/store');
+  const Testimonialdata =    await FetchData('home/testimonial');
+  const Contactinfo =        await FetchData('home/contact');
   const Footerinfo =         await FetchData('footer');
 
   return (
     <main>
       <Header />
-      {/* <Homeslider data={Topsliderdata} /> */}
+      <Homeslider data={Topsliderdata} />
       <Abouthome />
-      {/* <ProductsInfo data={Productitems}/>
+      <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
       <Testimonial data={Testimonialdata} />
-      <Contact data={Contactinfo} />*/}
+      <Contact data={Contactinfo} />
       <Footer data={Footerinfo}/> 
 
 
 
     <div className='container'>
-      <div className={styles.center}> 
+      <div className="nextlogocenter"> 
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -51,7 +51,7 @@ import FetchData from './components/Fetchdata'
         />
       </div>
 
-      <div className={styles.grid}>
+      {/* <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -101,7 +101,7 @@ import FetchData from './components/Fetchdata'
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
       </div>
     </main>
   )

@@ -7,6 +7,7 @@ async function abouthomedata() {
 		throw new Error(`HTTP error! status: ${res.status}`)
 	}
 	const abouthomeifo = await res.json();
+	
 	return abouthomeifo;
 }
 
