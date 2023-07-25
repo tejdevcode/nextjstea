@@ -1,5 +1,5 @@
 async function secdata(end) {
-    const res = await fetch(`https://nextjstea.vercel.app/api/${end}` , { next: { revalidate: 10 } });
+    const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + `api/${end}` , { next: { revalidate: 10 } });
     const secdata = await res.json();
     return secdata;
 } 

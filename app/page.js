@@ -13,6 +13,10 @@ import Testimonial from './components/home/Testimonial'
 import Contact from './components/home/Contact'
 import FetchData from './components/Fetchdata'
 
+export const metadata = {
+  title: 'Nextjs Demo By Tej R',
+}
+
 
  export default async function Home() {
   const Topsliderdata =      await FetchData('home/corosual');
