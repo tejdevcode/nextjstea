@@ -40,7 +40,7 @@ import FetchData from './components/Fetchdata'
 
 
     <div className='container'>
-      <div className={styles.center}>
+      <div className={styles.center}> 
         <Image
           className={styles.logo}
           src="/next.svg"
