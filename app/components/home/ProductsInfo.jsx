@@ -21,6 +21,7 @@ const ProductsInfo = ({data}) => {
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 3,
+      arrows: false,
       responsive: [
          {
            breakpoint: 576,
@@ -48,7 +49,8 @@ const ProductsInfo = ({data}) => {
        ]
     };
   return (
-    <div className="container-fluid product py-5 my-5">
+    <div className="container-fluid product py-5 my-5 position-relative">
+      {/* <Image src={products.secbg} alt="" className="secbgimg objimg position-absolute" /> */}
         <div className="container py-5">
         <WOW animation='fadeInUp' delay="0.1s">
             <div className="section-title text-center mx-auto" style={{maxWidth : "500px"}}>
