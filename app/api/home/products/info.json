@@ -2,7 +2,7 @@
 	"products": {
 		"secname": "Our Products",
 		"sectitle": "Tea has a complex positive effect on the body",
-		"secbg" : "/product-bg.png"
+		"secbg" : "/product-bg.png",
 		"productitems": [{
 				"media": "/product-4.jpg",
 				"title": "Organic Tea",
