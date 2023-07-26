@@ -6,4 +6,4 @@ const storepage = () => {
   )
 }
 
-export default storepage
+export default storepage 
