@@ -38,7 +38,7 @@ const Footer = ({ data }) => {
                         <h4 className="text-primary mb-4">{footerinfo.two.title}</h4>
                         {/* {console.log(footerinfo.two.links)} */}
                         {footerinfo.two.links.map((item, i) =>
-                        <Link className="btn btn-link" href="" key={i}><FaAngleRight />{item}</Link>
+                        <Link className="btn btn-link" href={item.url} key={i}><FaAngleRight />{item.name}</Link>
                         )}
                         
                      </div>

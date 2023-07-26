@@ -2,7 +2,8 @@
 	"footer": {
 		"one": {
 			"title": "Our Office",
-			"contact": [{
+			"contact": [
+				{
 					"directory": "123 Street, New York, USA",
 					"icon": "<FaMapMarkerAlt />"
 				},
@@ -17,7 +18,8 @@
 					"icon": "<FaEnvelope />"
 				}
 			],
-			"social": [{
+			"social": [
+				{
 					"icon": "<FaTwitter />",
 					"link": "https://twitter.com"
 				},
@@ -38,16 +40,32 @@
 		"two": {
 			"title": "Quick Links",
 			"links": [
-				"about us",
-				"contat us",
-				"Our service",
-				"Terms and conditions",
-				"support"
+				{
+					"name": "about us",
+					"url": "/about"
+				},
+				{
+					"name": "contat us",
+					"url": "/contact"
+				},
+				{
+					"name": "Our service",
+					"url": "/products"
+				},
+				{
+					"name": "Terms and conditions",
+					"url": "/trems-conditions"
+				},
+				{
+					"name": "support",
+					"url": "/contact"
+				}
 			]
 		},
 		"three": {
 			"title": "Business Hours",
-			"timing": [{
+			"timing": [
+				{
 					"day": "Monday - Friday",
 					"time": "09:00 - 07:00"
 				},

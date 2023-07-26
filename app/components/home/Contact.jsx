@@ -3,7 +3,7 @@ import Link from 'next/link'
 import WOW from 'react-wow';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
-const Article = ({ data }) => {
+const Contact = ({ data }) => {
    const contactinfo = data.contact;
    return (
       <div className="container-xxl contact py-5">
@@ -46,4 +46,4 @@ const Article = ({ data }) => {
    )
 }
 
-export default Article
+export default Contact
