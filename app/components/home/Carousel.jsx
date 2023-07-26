@@ -31,7 +31,7 @@ const Heroslider = ({data}) => {
 					<Carousel> 
                   {slideinfo.map((item, i) =>
 							<Carousel.Item className="" key={i}>
-								<Image className="w-100" src={item.slideimg} width={1520} height={855} alt="Image" loading = 'lazy' />
+								<Image className="w-100" src={item.slideimg} width={1350} height={855} alt="Image" loading = 'lazy' />
 								<Carousel.Caption>
 									<Container>
 										<div className="row justify-content-center">

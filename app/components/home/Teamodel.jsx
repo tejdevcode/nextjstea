@@ -40,7 +40,7 @@ const Teamodel = ({data}) => {
                       </div>
                     )}
                   </div>
-                  <Link className="btn btn-light rounded-pill py-3 px-5" href="">{teamodelinfo.seccta}</Link>
+                  <Link className="btn btn-light rounded-pill py-3 px-5" href="#">{teamodelinfo.seccta}</Link>
                 </div>
               </div>
             </WOW>
