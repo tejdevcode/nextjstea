@@ -37,9 +37,9 @@ const Footer = ({ data }) => {
                      <div className="col-lg-3 col-md-6">
                         <h4 className="text-primary mb-4">{footerinfo.two.title}</h4>
                         {/* {console.log(footerinfo.two.links)} */}
-                        {footerinfo.two.links.map((item, i) =>
+                        {/* {footerinfo.two.links.map((item, i) =>
                         <Link className="btn btn-link" href={item.url} key={i}><FaAngleRight />{item.name}</Link>
-                        )}
+                        )} */}
                         
                      </div>
                      <div className="col-lg-3 col-md-6">
