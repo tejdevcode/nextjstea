@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import WOW from 'react-wow'
 import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "../../style/slick-theme.css"
 import Slider from "react-slick"
 
 

@@ -3,7 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React, { useState, useEffect ,  useRef } from 'react'
 import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick-theme.css";
+import "../../style/slick-theme.css"
 import Slider from "react-slick";
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
