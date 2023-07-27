@@ -1,0 +1,18 @@
+{
+	"contactpage": {
+		"secname": "Contact Us",
+		"sectitle": "If You Have Any Query, Please Contact Us",
+		"formtitle": "Need a functional contact form?",
+		"formdisc" : "The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.",
+		"formdata" :[
+			{
+				"id": 1,
+				"name": "cerulean",
+				"email": "test@email.com",
+				"subject": "subject here",
+				"message": "message here"
+			}
+		]
+
+	}
+}
