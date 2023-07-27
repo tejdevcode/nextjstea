@@ -1,8 +1,15 @@
-import React from 'react'
+import Headname from '/app/components/page/Pageheader'
+import ProductsInfo from '/app/components/home/ProductsInfo'
+import FetchData from '/app/components/Fetchdata'
 
-const productspage = () => {
+const productspage = async () => {
+  const Pagetitlesec =        await FetchData('page/all');
+  const Productitems =        await FetchData('home/products');
   return (
-    <div>Products</div>
+    <>
+      <Headname data={Pagetitlesec.productpage}/>
+       <ProductsInfo data={Productitems}/>
+    </>
   )
 }
 

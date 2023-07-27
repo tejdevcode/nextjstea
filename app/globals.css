@@ -217,9 +217,14 @@ img{
   }
 }
 
-.page-header {
-  background: linear-gradient(rgba(136, 180, 78, .7), rgba(136, 180, 78, .7)), url(../public/carousel-1.jpg) center center no-repeat;
+
+.page-header:before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(136, 180, 78, .7), rgba(136, 180, 78, .7));
   background-size: cover;
+  z-index: -1;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -579,6 +584,24 @@ img{
     align-items: center;
     position: relative;
     padding: 4rem 0;
+}
+
+.inset{
+  inset: 0;
+}
+
+.objimg{
+  object-fit: cover;
+}
+
+.page-header{
+  .secbgimg {
+    z-index: -2;
+  }
+}
+
+.testimonial .secname{
+  color: #FFFFFF!important;
 }
 
 .siteloader{

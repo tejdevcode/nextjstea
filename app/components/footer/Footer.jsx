@@ -8,7 +8,7 @@ const Footer = ({ data }) => {
    return (
       <>
          <WOW animation='fadeIn' delay="0.1s">
-            <div className="container-fluid bg-dark footer mt-5 py-5 ">
+            <div className="container-fluid bg-dark footer py-5 ">
                <div className="container py-5">
                   <div className="row g-5">
                      <div className="col-lg-3 col-md-6">
