@@ -26,7 +26,9 @@ const Navmenu = ({data}) => {
 							)}
 						<NavDropdown title="Pages" id="basic-nav-dropdown">
 							{mainsubmenu.pages.map((item, i) =>
-								<NavDropdown.Item href={`/`+ item.replace(/ /g, '-')} key={i}>{item}</NavDropdown.Item>
+								<NavDropdown.Item key={i}>
+									<Link href={`/` + item.replace(/ /g, '-')} className='text-dark'>{item}</Link>
+								</NavDropdown.Item>
 							)}
 						</NavDropdown>
 						{mainmenu.slice(5,6).map((item, i) =>

@@ -1,8 +1,10 @@
 import './globals.css'
+import styles from './page.module.css'
 import { Inter } from 'next/font/google'
 import Header from './components/header/Header'
-import Footer from './components/footer/Footer';
+import Footer from './components/footer/Footer'
 import FetchData from './components/Fetchdata'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +21,18 @@ export default async function RootLayout({ children }) {
         <Header />
         {children}
         <Footer data={Footerinfo}/>
+        <div className='container'>
+          <div className="nextlogocenter"> 
+            <Image
+              className={styles.logo}
+              src="/next.svg"
+              alt="Next.js Logo"
+              width={180}
+              height={37}
+              priority
+            />
+          </div>
+          </div>
       </body>
     </html>
   )
