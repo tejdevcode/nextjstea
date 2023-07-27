@@ -1,9 +1,13 @@
-import React from 'react'
+import Headname from '../../components/page/Pageheader'
+import FetchData from '../../components/Fetchdata'
 
-const Aboutpage = () => {
+const  Aboutpage = async () => {
+  // const Pagetitlesec =        await FetchData('page/all');
+  // console.log(Pagetitlesec)
   return (
-    <div>Aboutpage</div> 
+    // <Headname data={Pagetitlesec}/>  
+    <div> about</div>
   )
 }
 
-export default Aboutpage
+export default Aboutpage 

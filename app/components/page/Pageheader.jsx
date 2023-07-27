@@ -1,23 +1,30 @@
-// import WOW from 'react-wow';
-// import Link from 'next/link';
+"use client"
+import Link from 'next/link'
+import WOW from 'react-wow'
+import Image from "next/image"
 
-// const Pageheader = ({data}) => {
-//    return (
-//       // <WOW animation='fadeIn' delay="0.1s">
-//          <div class="container-fluid page-header py-5 mb-5 ">
-//             <div class="container text-center py-5">
-//                <h1 class="display-2 text-dark mb-4 animated slideInDown">{data.pagename}</h1>
-//                <nav aria-label="breadcrumb animated slideInDown">
-//                   <ol class="breadcrumb justify-content-center mb-0">
-//                      <li class="breadcrumb-item"><Link href="#">Home</Link></li>
-//                      <li class="breadcrumb-item"><Link href="#">Pages</Link></li>
-//                      <li class="breadcrumb-item text-dark" aria-current="page">{data.pagebrad}</li>
-//                   </ol>
-//                </nav>
-//             </div>
-//          </div>
-//       // </WOW>
-//    )
-// }
+const Pageheader = ({ data }) => {
+   return (
+      <WOW animation='fadeInUp' delay="0.1s">
+         <div className="container-fluid page-header py-5 mb-5 position-relative">
+         <Image src={products.secbg} alt="" className="secbgimg objimg position-absolute bottom-0 start-0"  width={550} height={600}/>
+            <div className="container text-center py-5">
+               <WOW animation='slideInUp' delay="0.2s">
+                  <h1 className="display-2 text-dark mb-4">{data.pagename}</h1>
+               </WOW>
+               <WOW animation='slideInUp' delay="0.4s">
+                  <nav aria-label="breadcrumb ">
+                     <ol className="breadcrumb justify-content-center mb-0">
+                        <li className="breadcrumb-item"><Link href="#">Home</Link></li>
+                        <li className="breadcrumb-item"><Link href="#">Pages</Link></li>
+                        <li className="breadcrumb-item text-dark" aria-current="page">{data.pagebrad}</li>
+                     </ol>
+                  </nav>
+               </WOW>
+            </div>
+         </div>
+      </WOW>
+   )
+}
 
-// export default Pageheader
+export default Pageheader

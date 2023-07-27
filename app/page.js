@@ -1,9 +1,8 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
-import Header from './components/header/Header';
+
 import Abouthome from './components/home/Abouthome';
-import Footer from './components/footer/Footer';
 import Homeslider from './components/home/Carousel';
 import ProductsInfo from './components/home/ProductsInfo';
 import Articleinfo from './components/home/Article';
@@ -26,11 +25,11 @@ export const metadata = {
   const Onlinestoreinfo =    await FetchData('home/store');
   const Testimonialdata =    await FetchData('home/testimonial');
   const Contactinfo =        await FetchData('home/contact');
-  const Footerinfo =         await FetchData('footer');
+  
 
   return (
     <main>
-      <Header />
+      
       <Homeslider data={Topsliderdata} />
       <Abouthome />
       <ProductsInfo data={Productitems}/>
@@ -39,7 +38,7 @@ export const metadata = {
       <Onlinestore data={Onlinestoreinfo} />
       <Testimonial data={Testimonialdata} />
       <Contact data={Contactinfo} />
-      <Footer data={Footerinfo}/> 
+       
 
 
 
