@@ -4,6 +4,7 @@ import WOW from 'react-wow'
 import Image from "next/image"  
 
 const Pageheader = ({ data }) => {
+   console.log(data)
    return (
       <WOW animation='fadeInUp' delay="0.1s">
          <div className="container-fluid page-header py-5 position-relative">
