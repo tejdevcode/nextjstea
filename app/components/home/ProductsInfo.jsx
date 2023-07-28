@@ -50,7 +50,7 @@ const ProductsInfo = ({data}) => {
        ]
     };
   return (
-    <div className="container-fluid product py-5 my-5 position-relative">
+    <div className="container-fluid product py-5  position-relative">
       <Image src={products.secbg} alt="" className="secbgimg objimg position-absolute bottom-0 start-0"  width={550} height={600}/>
         <div className="container py-5">
         <WOW animation='fadeInUp' delay="0.1s">
