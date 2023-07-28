@@ -1,16 +1,9 @@
-import Headname from '/app/components/page/Pageheader'
-import FetchData from '/app/components/Fetchdata'
-import Onlinestore from '/app/components/home/Onlinestore'
+import React from 'react'
 
-const  Storepage = async () => {
-  const Pagetitlesec =        await FetchData('page/all');
-  const Onlinestoreinfo =    await FetchData('home/store');
+const storepage = () => {
   return (
-    <>
-      <Headname data={Pagetitlesec.storepage}/>
-      <div className="mb-5"><Onlinestore data={Onlinestoreinfo} /></div>
-    </>
+    <div>Store</div>
   )
 }
 
-export default Storepage 
+export default storepage 

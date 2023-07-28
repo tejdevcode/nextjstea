@@ -1,10 +1,8 @@
-import Headname from '../../components/page/Pageheader'
-import FetchData from '../../components/Fetchdata'
+import React from 'react'
 
-const Contactpage = async () => {
-  const Pagetitlesec =        await FetchData('page/all');
+const Contactpage = () => {
   return (
-    <Headname data={Pagetitlesec.contactpage}/>  
+    <div>Contact Us</div>
   )
 }
 

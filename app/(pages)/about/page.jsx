@@ -1,15 +1,12 @@
-import Headname from '/app/components/page/Pageheader'
-import FetchData from '/app/components/Fetchdata'
-import Abouthome from '/app/components/home/Abouthome';
-
+import Headname from '../../components/page/Pageheader'
+import FetchData from '../../components/Fetchdata'
 
 const  Aboutpage = async () => {
-  const Pagetitlesec =        await FetchData('page/all');
+  // const Pagetitlesec =        await FetchData('page/all');
+  // console.log(Pagetitlesec)
   return (
-    <>
-      <Headname data={Pagetitlesec.aboutpage}/>
-      <div className="mt-5"><Abouthome /></div>
-    </>
+    // <Headname data={Pagetitlesec}/>  
+    <div> about</div>
   )
 }
 

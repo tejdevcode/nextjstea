@@ -1,7 +1,11 @@
-import Abouthome from './components/home/Abouthome'
-import Homeslider from './components/home/Carousel'
-import ProductsInfo from './components/home/ProductsInfo'
-import Articleinfo from './components/home/Article'
+
+import Image from 'next/image'
+import styles from './page.module.css'
+
+import Abouthome from './components/home/Abouthome';
+import Homeslider from './components/home/Carousel';
+import ProductsInfo from './components/home/ProductsInfo';
+import Articleinfo from './components/home/Article';
 import Teamodel from './components/home/Teamodel'
 import Onlinestore from './components/home/Onlinestore'
 import Testimonial from './components/home/Testimonial'
@@ -28,14 +32,28 @@ export const metadata = {
       
       <Homeslider data={Topsliderdata} />
       <Abouthome />
-      <div className="my-5"><ProductsInfo data={Productitems}/></div>
+      <ProductsInfo data={Productitems}/>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
-      <div className="testimonial">
-      <div className="py-5 my-5"><Testimonial data={Testimonialdata}/></div></div>
-      <div className="mb-5"><Contact data={Contactinfo} /></div>
+      <Testimonial data={Testimonialdata} />
+      <Contact data={Contactinfo} />
        
+
+
+
+    <div className='container'>
+      <div className="nextlogocenter"> 
+        <Image
+          className={styles.logo}
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
+
       {/* <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -87,7 +105,7 @@ export const metadata = {
           </p>
         </a>
       </div> */}
-      
+      </div>
     </main>
   )
 }
