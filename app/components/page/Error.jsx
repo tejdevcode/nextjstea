@@ -19,7 +19,7 @@ const Error = () => {
             </div>
          </div>
       </div>
-      </WOW>
+      </WOW> 
   )
 }
 
