@@ -26,7 +26,7 @@ const TextToBase64Image = () => {
 
   useEffect(()=>{
     const canvas = document.createElement('canvas');
-  canvas.width = 350;
+  canvas.width = 455;
   canvas.height = 100;
 
   const ctx = canvas.getContext('2d');
@@ -41,7 +41,7 @@ const TextToBase64Image = () => {
   SetBadeimg(base64Image)
   },[])
   
-  return <Image src={`data:image/png;base64,${baseimg}`} alt="Base64 Image" width={300} height={100}/>;
+  return <Image src={`data:image/png;base64,${baseimg}`} alt="Base64 Image" width={455} height={100}/>;
  };
  
  
