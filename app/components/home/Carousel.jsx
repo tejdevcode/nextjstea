@@ -35,11 +35,11 @@ const Heroslider = ({data}) => {
 								<Carousel.Caption>
 									<Container>
 										<div className="row justify-content-center">
-											<div className="col-lg-7 text-center">
+											<div className="col-lg-8 text-center">
 												<p className="fs-4 text-white animated zoomIn"  dangerouslySetInnerHTML={{ __html: item.toptitle}}></p>
 												<h1 className="display-1 text-dark mb-4 animated zoomIn">{item.slidetitle}</h1>
 												<Link href="/store" className="btn btn-light rounded-pill py-3 px-5 animated zoomIn">{item.buttontxt}</Link>
-											</div>
+											</div> 
 										</div>
 									</Container>
 								</Carousel.Caption>
