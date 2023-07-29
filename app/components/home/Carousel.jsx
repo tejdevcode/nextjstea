@@ -39,7 +39,7 @@ const Heroslider = ({data}) => {
 												<p className="fs-4 text-white animated zoomIn"  dangerouslySetInnerHTML={{ __html: item.toptitle}}></p>
 												<h1 className="display-1 text-dark mb-4 animated zoomIn">{item.slidetitle}</h1>
 												<Link href="/store" className="btn btn-light rounded-pill py-3 px-5 animated zoomIn">{item.buttontxt}</Link>
-											</div>
+											</div> 
 										</div>
 									</Container>
 								</Carousel.Caption>
