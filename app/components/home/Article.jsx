@@ -22,7 +22,7 @@ const Article = ({data}) => {
                             <h1 className="display-6">{articleinfo.sectitle}</h1>
                         </div>
                         <div className="secdisc" dangerouslySetInnerHTML={{ __html: articleinfo.secdisc }}></div>
-                        <Link href={articleinfo.ctalink} className="btn btn-primary rounded-pill py-3 px-5 text-capitalize">{articleinfo.seccta}</Link>
+                        <Link href={'/store'} className="btn btn-primary rounded-pill py-3 px-5 text-capitalize">{articleinfo.seccta}</Link>
                     </div>
                 </WOW>
             </div>
