@@ -8,7 +8,7 @@ const FormInput = (props) => {
     };
    return (
       
-         <div className="form-floating" key={props.id}> 
+         <div className="form-floating"> 
             <input
                {...inputProps}
                onChange={onChange}
