@@ -66,7 +66,6 @@ const Contactfields = () => {
            {inputs.map((inputdata) => (
               <div className={(inputdata.id == 1 || inputdata.id == 2 ? "col-md-6" : "col-12")} key={inputdata.id}>
                  <FormInput
-                    key={inputdata.id}
                     {...inputdata}
                     value={values[inputdata.name]}
                     onChange={onChange}
