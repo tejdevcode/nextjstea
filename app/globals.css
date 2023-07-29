@@ -623,3 +623,19 @@ img{
     transform: rotate(360deg);
   }
 } 
+
+
+.form-floating span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input.form-control:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+input.form-control:invalid[focused="true"] ~ span{
+  display: block;
+}
