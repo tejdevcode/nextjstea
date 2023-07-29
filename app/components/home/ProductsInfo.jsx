@@ -63,7 +63,7 @@ const ProductsInfo = ({data}) => {
                <div className="owl-carousel product-carousel">
                   <Slider  ref={sliderRef}  {...settings}>
                   {products.productitems.map((item, index) =>
-                     <Link href={item.link} className="d-block product-item px-3 rounded" key={index}>
+                     <Link href={'/store'} className="d-block product-item px-3 rounded" key={index}>
                         <Image src={item.media} alt="" width={400} height={267}/>
                         <div className="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                               <h4 className="text-primary">{item.title}</h4>

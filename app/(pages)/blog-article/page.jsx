@@ -5,7 +5,7 @@ import Articleinfo from '/app/components/home/Article'
 const  Acticle = async () => {
   const Pagetitlesec =        await FetchData('page/all');
   const Article =            await FetchData('home/article');
-  console.log(Pagetitlesec.articlepage)
+  //console.log(Pagetitlesec.articlepage)
   return (
     <>
     <Headname data={Pagetitlesec.articlepage}/>
