@@ -3,7 +3,6 @@ import WOW from 'react-wow';
 import Contactline from '/app/components/home/Contactline'
 
 const Contacttitle = ({data}) => {
-   console.log(data)
   return (
    <WOW animation='fadeInUp' delay="0.1s">
      <div className="section-title text-center mx-auto " style={{maxWidth : "500px"}}>
