@@ -6,6 +6,9 @@
 .pnp.js
 /tea-shop-website-template
 /.vscode
+/youtube
+/react-form
+/youtube-react-form
 
 # testing
 /coverage
