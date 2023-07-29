@@ -3,8 +3,10 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import { Mrs_Saint_Delafield } from 'next/font/google'
 const mrsfont = Mrs_Saint_Delafield({ weight: ['400'], subsets: ['latin'] });
-const TextToBase64Image = (text) => {
-  const [baseimg , SetBadeimg] = useState();
+
+const TextToBase64Image = () => {
+  let text = 'Hi Tej, this is a base64 image!';
+  const [baseimg , SetBadeimg] = useState(); 
   // const textToBase64 = (text) => {
   //   return btoa(text);
   // };
@@ -31,7 +33,7 @@ const TextToBase64Image = (text) => {
   const fontadd = '50px' + mrsfont.style.fontFamily;
   //ctx.font = '20px Mrs Saint Delafield';
   ctx.font = fontadd;
-  ctx.fillText(text.text, 10, 60);
+  ctx.fillText(text, 10, 60);
 
   const dataURL = canvas.toDataURL('image/png');
   const base64Image = dataURL.split(',')[1];
