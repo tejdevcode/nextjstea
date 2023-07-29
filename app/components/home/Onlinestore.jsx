@@ -32,8 +32,8 @@ const Onlinestore = ({data}) => {
                       <h4 className="text-primary">{item.price}</h4>
                     </div>
                     <div className="store-overlay">
-                      <a href="" className="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i className="fa fa-arrow-right ms-2"></i></a>
-                      <a href="" className="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i className="fa fa-cart-plus ms-2"></i></a>
+                      <a href="/store" className="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i className="fa fa-arrow-right ms-2"></i></a>
+                      <a href="/store" className="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i className="fa fa-cart-plus ms-2"></i></a>
                     </div>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const Onlinestore = ({data}) => {
                     </div>
                 </div> */}
                 <div className="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <Link href={storeinfo.ctalink} className="btn btn-primary rounded-pill py-3 px-5">{storeinfo.seccta}</Link>
+                    <Link href={'/store'} className="btn btn-primary rounded-pill py-3 px-5">{storeinfo.seccta}</Link>
                 </div>
             </div>
         </div>

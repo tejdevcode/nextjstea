@@ -1,17 +1,16 @@
-
-import Image from 'next/image'
-import styles from './page.module.css'
-import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
-import Homeslider from './components/home/Carousel';
-import Abouthome from './components/home/Abouthome';
-import ProductsInfo from './components/home/ProductsInfo';
-import Articleinfo from './components/home/Article';
+import Abouthome from './components/home/Abouthome'
+import Homeslider from './components/home/Carousel'
+import ProductsInfo from './components/home/ProductsInfo'
+import Articleinfo from './components/home/Article'
 import Teamodel from './components/home/Teamodel'
 import Onlinestore from './components/home/Onlinestore'
 import Testimonial from './components/home/Testimonial'
 import Contact from './components/home/Contact'
 import FetchData from './components/Fetchdata'
+
+export const metadata = {
+  title: 'Nextjs Demo By Tej R',
+}
 
 
  export default async function Home() {
@@ -22,36 +21,22 @@ import FetchData from './components/Fetchdata'
   const Onlinestoreinfo =    await FetchData('home/store');
   const Testimonialdata =    await FetchData('home/testimonial');
   const Contactinfo =        await FetchData('home/contact');
-  const Footerinfo =         await FetchData('footer');
+  
 
   return (
     <main>
-      <Header />
+      
       <Homeslider data={Topsliderdata} />
       <Abouthome />
-      <ProductsInfo data={Productitems}/>
+      <div className="my-5"><ProductsInfo data={Productitems}/></div>
       <Articleinfo data={Article} />
       <Teamodel data={Teamodalinfo} />
       <Onlinestore data={Onlinestoreinfo} />
-      <Testimonial data={Testimonialdata} />
-      <Contact data={Contactinfo} />
-      <Footer data={Footerinfo}/>
-
-
-
-    <div className='container'>
-      <div className={styles.center}> 
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
+      <div className="testimonial">
+      <div className="py-5 my-5"><Testimonial data={Testimonialdata}/></div></div>
+      <div className="mb-5"><Contact data={Contactinfo} /></div>
+       
+      {/* <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className={styles.card}
@@ -101,8 +86,8 @@ import FetchData from './components/Fetchdata'
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
-      </div>
+      </div> */}
+      
     </main>
   )
 }

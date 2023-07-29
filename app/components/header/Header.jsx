@@ -1,7 +1,8 @@
 import Navmenu from "./Nav"
 
 async function navdata(){
-  const res = await fetch(`http://localhost:3001/api/header`,{ next: { revalidate: 10 } });
+  //const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL +  `/api/header`,{ next: { revalidate: 10 } });
+  const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + `api/header`,{ next: { revalidate: 10 } });
   //const res = await fetch(`https://tejrdev.github.io/api/general.json`,{ next: { revalidate: 10 } });
   const nav = await res.json();  
   return nav;

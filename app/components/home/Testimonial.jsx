@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import WOW from 'react-wow'
 import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import "../../style/slick-theme.css"
 import Slider from "react-slick"
 
 
@@ -18,11 +18,11 @@ const Testimonial = ({data}) => {
     slidesToScroll: 1
   };
   return (
-    <div className="container-fluid testimonial py-5 my-5">
+    <div className="container-fluid py-5 mb-5">
         <div className="container py-5">
         <WOW animation='fadeInUp' delay="0.1s">
             <div className="section-title text-center mx-auto " style={{maxWidth:"500px"}}>
-                <p className="fs-5  fst-italic text-white">{testimonial.secname}</p>
+                <p className="fs-5  fst-italic text-primary secname">{testimonial.secname}</p>
                 <h1 className="display-6">{testimonial.sectitle}</h1>
             </div>
             </WOW>

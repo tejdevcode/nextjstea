@@ -1,10 +1,10 @@
 "use client"
-import { FaCheck } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa'
 import Link from 'next/link'
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import React, { useState } from 'react';
-import WOW from 'react-wow';
+import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import React, { useState } from 'react'
+import WOW from 'react-wow'
 
 
 const Teamodel = ({data}) => {
@@ -40,7 +40,7 @@ const Teamodel = ({data}) => {
                       </div>
                     )}
                   </div>
-                  <Link className="btn btn-light rounded-pill py-3 px-5" href="">{teamodelinfo.seccta}</Link>
+                  <Link className="btn btn-light rounded-pill py-3 px-5" href="/blog-article">{teamodelinfo.seccta}</Link>
                 </div>
               </div>
             </WOW>

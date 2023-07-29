@@ -3,7 +3,8 @@ import Image from "next/image"
 import Link from "next/link"
 import React, { useState, useEffect ,  useRef } from 'react'
 import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+//import "slick-carousel/slick/slick-theme.css";
+import "../../style/slick-theme.css"
 import Slider from "react-slick";
 import { FaChevronLeft } from 'react-icons/fa';
 import { FaChevronRight } from 'react-icons/fa';
@@ -21,6 +22,7 @@ const ProductsInfo = ({data}) => {
       dots: false,
       slidesToShow: 3,
       slidesToScroll: 3,
+      arrows: false,
       responsive: [
          {
            breakpoint: 576,
@@ -48,7 +50,8 @@ const ProductsInfo = ({data}) => {
        ]
     };
   return (
-    <div className="container-fluid product py-5 my-5">
+    <div className="container-fluid product py-5  position-relative">
+      <Image src={products.secbg} alt="" className="secbgimg objimg position-absolute bottom-0 start-0"  width={550} height={600}/>
         <div className="container py-5">
         <WOW animation='fadeInUp' delay="0.1s">
             <div className="section-title text-center mx-auto" style={{maxWidth : "500px"}}>
@@ -60,8 +63,8 @@ const ProductsInfo = ({data}) => {
                <div className="owl-carousel product-carousel">
                   <Slider  ref={sliderRef}  {...settings}>
                   {products.productitems.map((item, index) =>
-                     <Link href={item.link} className="d-block product-item px-3 rounded" key={index}>
-                        <Image src={item.media} alt="" width={415} height={276}/>
+                     <Link href={'/store'} className="d-block product-item px-3 rounded" key={index}>
+                        <Image src={item.media} alt="" width={400} height={267}/>
                         <div className="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                               <h4 className="text-primary">{item.title}</h4>
                               <span className="text-body">{item.discription}</span>

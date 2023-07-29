@@ -1,11 +1,13 @@
 import Image from "next/image"
 
 async function abouthomedata() {
-	const res = await fetch(process.env.NEXT_APP_URL + "api/home/about", { next: { revalidate: 10 } });
+	const res = await fetch(process.env.NEXT_PUBLIC_VERCEL_URL + "api/home/about", { next: { revalidate: 10 } });
+	//const res = await fetch("https://nextjstea.vercel.app/api/home/about", { next: { revalidate: 10 } });
 	if (!res.ok) {
 		throw new Error(`HTTP error! status: ${res.status}`)
 	}
 	const abouthomeifo = await res.json();
+	
 	return abouthomeifo;
 }
 
