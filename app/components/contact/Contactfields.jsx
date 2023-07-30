@@ -42,18 +42,36 @@ const Contactfields = () => {
       {
         id: 4,
         name: "message",
-        type: "message",
+        type: "text",
         placeholder: "Message",
         errorMessage:
-          "Message should be 8-20 characters!",
+          "Message should be min 5 characters!",
         label: "Message",
-        pattern: `^[a-zA-Z0-9!@#$%^&*]{5,20}$`,
+        pattern: "^.{5,200}$",
         required: true,
       }
     ];
   
-    const handleSubmit = (e) => {
+   const handleSubmit = async (e) => {
       e.preventDefault();
+      const formdata = new FormData(e.target);
+
+      try {
+         const response = await fetch('your_api_endpoint_url', {
+            method: 'POST',
+            body: formdata,
+         });
+
+         if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+         }
+
+         const responseData = await response.json();
+         console.log('API response:', responseData);
+      } catch (error) {
+         console.error('API error:', error);
+      }
+
     };
   
     const onChange = (e) => {
