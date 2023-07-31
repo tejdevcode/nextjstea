@@ -55,22 +55,23 @@ const Contactfields = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
       const formdata = new FormData(e.target);
+      console.log(Object.fromEntries(formdata))
 
-      try {
-         const response = await fetch('your_api_endpoint_url', {
-            method: 'POST',
-            body: formdata,
-         });
+      // try {
+      //    const response = await fetch('your_api_endpoint_url', {
+      //       method: 'POST',
+      //       body: formdata,
+      //    });
 
-         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-         }
+      //    if (!response.ok) {
+      //       throw new Error(`HTTP error! status: ${response.status}`);
+      //    }
 
-         const responseData = await response.json();
-         console.log('API response:', responseData);
-      } catch (error) {
-         console.error('API error:', error);
-      }
+      //    const responseData = await response.json();
+      //    console.log('API response:', responseData);
+      // } catch (error) {
+      //    console.error('API error:', error);
+      // }
 
     };
   
