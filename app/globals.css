@@ -146,6 +146,10 @@ img{
       height: 100px;
   }
 
+  .navbar .navbar-brand img{
+    height: auto;
+  }
+
   .navbar .navbar-nav .nav-link  {
       margin-right: 0;
       padding: 10px 0;
@@ -639,3 +643,24 @@ input.form-control:invalid[focused="true"]{
 input.form-control:invalid[focused="true"] ~ span{
   display: block;
 }
+
+.product .secbgimg{
+  z-index: -1;
+}
+
+/*responsivee*/
+
+@media (max-width: 991px){
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 10px solid var(--dark);
+  }
+}
+
+@media(max-width:767px){
+  .product-item img{
+    margin: 0 auto;
+  }
+}
+

@@ -16,7 +16,7 @@ const ProductsInfo = ({data}) => {
     const sliderRef = useRef(null);
         
     const settings = {
-      autoplay: true,
+      autoplay: false,
       speed: 1000,
       infinite: true,
       dots: false,
@@ -36,12 +36,19 @@ const ProductsInfo = ({data}) => {
          {
            breakpoint: 768,
            settings: {
+             slidesToShow: 1,
+             slidesToScroll: 1
+           }
+         },
+         {
+           breakpoint: 992,
+           settings: {
              slidesToShow: 2,
              slidesToScroll: 2
            }
          },
          {
-           breakpoint: 992,
+           breakpoint: 1024,
            settings: {
              slidesToShow: 3,
              slidesToScroll: 3
@@ -63,7 +70,7 @@ const ProductsInfo = ({data}) => {
                <div className="owl-carousel product-carousel">
                   <Slider  ref={sliderRef}  {...settings}>
                   {products.productitems.map((item, index) =>
-                     <Link href={'/store'} className="d-block product-item px-3 rounded" key={index}>
+                     <Link href={'/store'} className="d-block product-item px-0 px-md-3 rounded" key={index}>
                         <Image src={item.media} alt="" width={400} height={267}/>
                         <div className="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
                               <h4 className="text-primary">{item.title}</h4>
