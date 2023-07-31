@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import info from './info.json';
-import submit from './submit.json';
+//import submit from './submit.json';
 
 
 export async function GET() {
