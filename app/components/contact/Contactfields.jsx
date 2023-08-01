@@ -58,7 +58,7 @@ const Contactfields = () => {
       const formdata = new FormData(e.target);
       console.log(Object.fromEntries(formdata));
       setSend(true);
-      setSuccess('Foram Data Sent Successfully');
+      setSuccess('The data has been sent successfully.');
 
       // try {
       //    const response = await fetch('your_api_endpoint_url', {
@@ -97,7 +97,7 @@ const Contactfields = () => {
          
            <div className="col-12">
               <button className="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
-              <p className='mt-3 text-success'><strong>{success}</strong></p>
+              <p className='mt-3 text-success text-capitalize'><strong>{success}</strong></p>
            </div>
         </div>
      </form>
