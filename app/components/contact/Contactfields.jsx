@@ -1,9 +1,10 @@
 "use client"
-import { useRef , useState } from 'react'
+import {useState } from 'react'
 import FormInput from './FormInput'
 
 const Contactfields = () => {
-   
+   const [send , setSend] = useState(false);
+   const [success , setSuccess] = useState('');
    const [values, setValues] = useState({
       yourname: "",
       email: "",
@@ -55,7 +56,9 @@ const Contactfields = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
       const formdata = new FormData(e.target);
-      console.log(Object.fromEntries(formdata))
+      console.log(Object.fromEntries(formdata));
+      setSend(true);
+      setSuccess('Foram Data Sent Successfully');
 
       // try {
       //    const response = await fetch('your_api_endpoint_url', {
@@ -94,6 +97,7 @@ const Contactfields = () => {
          
            <div className="col-12">
               <button className="btn btn-primary rounded-pill py-3 px-5" type="submit">Send Message</button>
+              <p className='mt-3 text-success'><strong>{success}</strong></p>
            </div>
         </div>
      </form>
