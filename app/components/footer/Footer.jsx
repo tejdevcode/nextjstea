@@ -67,7 +67,7 @@ const Footer = ({ data }) => {
          <div className="container-fluid copyright py-4">
             <div className="container">
                <div className="row">
-                  <div className="col-md-12 text-center text-md-start mb-3 mb-md-0">
+                  <div className="col-md-12 text-center text-md-center mb-3 mb-md-0">
                      {footerinfo.copy.title}
                   </div>
                   {/*<div className="col-md-6 text-center text-md-end">
