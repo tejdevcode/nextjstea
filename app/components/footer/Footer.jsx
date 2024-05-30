@@ -70,9 +70,9 @@ const Footer = ({ data }) => {
                   <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                      {footerinfo.copy.title}
                   </div>
-                  <div className="col-md-6 text-center text-md-end">
+                  /*<div className="col-md-6 text-center text-md-end">
                      {footerinfo.copy.design} <a className="fw-medium" href="#">HTML Codex</a>
-                  </div>
+                  </div>*/
                </div>
             </div>
          </div>
