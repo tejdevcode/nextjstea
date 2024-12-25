@@ -24,7 +24,7 @@ const Navmenu = ({data}) => {
 						{mainmenu.slice(0,4).map((item, i) =>
 							<Link href={`/`+ (item.linkName === 'home' ? "" : item.linkName)} key={i} className='nav-item nav-link'>{item.linkName}</Link>
 							)}
-						<NavDropdown title="Pages" id="basic-nav-dropdown">
+						<NavDropdown title="More" id="basic-nav-dropdown">
 							{mainsubmenu.pages.map((item, i) =>
 								<NavDropdown.Item key={i}>
 									<Link href={`/` + item.replace(/ /g, '-')} className='text-dark'>{item}</Link>
